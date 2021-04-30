@@ -5,8 +5,9 @@ function paintBg(num){
     console.log('paint');
     const image = new Image();
     const date = new Date();
-    const hours = date.getHours;
+    const hours = date.getHours();
     //const hours = 14;
+
     if(5<hours && hours<12){
         image.src = `images/mor${randomNum(IMG_NUM)+1}.jpg`
     }else if(11<hours && hours <20){
