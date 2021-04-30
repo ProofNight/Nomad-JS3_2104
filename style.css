@@ -1,0 +1,86 @@
+.nameForm{
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+button{
+    border: none;
+    background: none;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.bgImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadeIn 0.5s linear;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+.clock{
+    color: white;
+    font-size: 150px;
+    margin: 0;
+    font-family: 'Kranky', cursive;
+}
+input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    caret-color: white;
+    color: white;
+}
+input:focus{
+    outline: none;
+}
+input::placeholder{
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+.nameInput{
+    font-size: 20px;
+}
+.bottomLine{
+    border-bottom: 1px solid white;
+}
+/* span */
+.greeting{
+    /*border-bottom: 1px solid white;*/
+    font-size: 20px;
+    color: white;
+    margin: 10px;
+    
+}
+.toDoList{
+    color: white;
+    list-style:none;
+   padding-left:0px;
+   font-weight: 600;
+}
+.weather{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-family: 'Kranky', cursive;
+}

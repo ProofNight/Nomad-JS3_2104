@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>My First JS - Webs</title>
+        <link rel="stylesheet" href="style.css" type='text/css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Kranky&family=Yatra+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 class='clock js-clock'>00:00</h1>
+
+        <div>
+            <form class='nameForm js-nameForm visible'>
+                <input class='nameInput js-nameInput' type="text" placeholder='Type your name here.' required>
+            </form>
+            <h4 class='greeting js-greeting'></h4>
+        </div>
+        <div>
+            <form class='toDoForm js-toDoForm visible'>
+                <input class='toDoInput js-toDoInput' type="text" placeholder='Write a To Do here' required>
+            </form>
+            <ul class='toDoList js-toDoList'></ul>
+        </div>
+        <span class='weather js-weather'></span>
+
+        
+        <script src='clock.js'></script>
+        <script src='greet.js'></script>
+        <script src='toDO.js'></script>
+        <script src='weather.js'></script>
+        <script src='bg.js'></script>
+    </body>
+</html>
