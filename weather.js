@@ -2,8 +2,7 @@ const weather = document.querySelector('.js-weather');
 const API_KEY = 'ee5988678a6fa6928cc374eaa4c915de';
 
 function getWeather(latitude, longitude){
-    fetch(`
-    http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
+    fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${API_KEY}&units=metric`
     ).then(function(response){
         return response.json();
     }).then(function(json){
